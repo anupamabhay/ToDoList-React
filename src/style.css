@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+    gap: 0.5rem;
+    /* border: 1px solid green; */
+    
+}
+
+body{
+    background-color: rgb(27, 26, 26);
+    color: bisque;
+    max-width: 550px;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: justify;
+    /* word-wrap: break-word;
+    word-break: break-all; */
+
+}
+
+.new-item-form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#item{
+    background-color: rgba(255, 227, 194, 0.6);
+    border: 1px solid rgb(254, 173, 81);
+}
+#item:focus{
+    background-color: rgba(255, 227, 194, .8);
+}
+
+.btn{
+    background-color: rgba(208, 56, 71, 0.258);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    color:rgb(255, 227, 194);
+    border: 1px solid rgb(220, 69, 84);
+}
+
+.btn:hover{
+    background-color: rgb(220, 69, 84);
+    border: 1px solid rgba(208, 56, 71, 0.258);
+}
+
+.btn-del{
+    flex-grow: 0;
+    align-self: start; 
+}
+
+.task-list{
+    margin: 0;
+    padding: 0;
+    margin-left: 0rem;
+    list-style: none;
+}
+
+.task-list li{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.task-list li label {
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+.task-list li:has(input:checked) label {
+    color: rgba(255, 227, 194, .5);
+    text-decoration: line-through;
+}
+
+.checkbox {
+    border: 2px solid green;
+    color: red;
+}
