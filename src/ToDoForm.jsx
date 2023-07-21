@@ -3,7 +3,6 @@ export function ToDoForm({addTask}){
     const [newItem, setNewItem] = useState("");
     function handleSubmit(event) {
         event.preventDefault();
-        // instead of newItem != "" try regex[0-9a-zA-Z] or however it's written. Check google.
         if(newItem !== ""){
           addTask(newItem);
         }
