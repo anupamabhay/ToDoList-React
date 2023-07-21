@@ -4,8 +4,6 @@
     font-family: 'Manrope', sans-serif;
     box-sizing: border-box;
     gap: 0.5rem;
-    /* border: 1px solid green; */
-    
 }
 
 body{
@@ -15,15 +13,11 @@ body{
     padding: 1rem;
     margin: 0 auto;
     text-align: justify;
-    /* word-wrap: break-word;
-    word-break: break-all; */
-
 }
 
 .new-item-form{
     display: flex;
     flex-direction: column;
-    
 }
 
 .form-row{
@@ -36,6 +30,7 @@ body{
     background-color: rgba(255, 227, 194, 0.6);
     border: 1px solid rgb(254, 173, 81);
 }
+
 #item:focus{
     background-color: rgba(255, 227, 194, .8);
 }
